@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gahoe Art | 한옥 갤러리 대관</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#faf9f7;
+      --panel:#ffffff;
+      --muted:#6b7280;
+      --text:#1f2937;
+      --accent:#e6dccf;
+      --shadow:0 4px 12px rgba(0,0,0,.08);
+      --radius:1rem;
+    }
+    body{margin:0; font-family:Pretendard,sans-serif; background:var(--bg); color:var(--text);}
+    header{background:#fff; border-bottom:1px solid #e5e7eb; position:sticky; top:0; z-index:50;}
+    .container{width:min(1100px,90%); margin:0 auto;}
+    .nav{display:flex; justify-content:space-between; align-items:center; padding:14px 0}
+    .brand{display:flex; gap:.5rem; align-items:center; font-weight:600; font-size:1.1rem;}
+    .brand .mark{width:28px; height:28px; border-radius:.5rem; background:var(--accent); display:grid; place-items:center; color:#111; font-weight:700;}
+    .nav ul{display:flex; gap:1rem; list-style:none; margin:0; padding:0}
+    .nav ul a{color:#111; text-decoration:none; font-weight:500; padding:.25rem .5rem;}
+    .nav ul a:hover{background:var(--accent); border-radius:.5rem;}
+    .nav a.cta{padding:.5rem 1rem; border-radius:999px; background:var(--accent); color:#111; font-weight:600; box-shadow:var(--shadow); text-decoration:none}
+    .hero{padding:100px 0; display:flex; align-items:center; justify-content:space-between; gap:3rem; text-align:center}
+    .hero-text{flex:1}
+    .hero h1{font-size:clamp(28px,5vw,40px); margin-bottom:1rem; font-weight:600}
+    .lead{color:var(--muted); max-width:600px; margin:0 auto 1.5rem}
+    .hero .cta{display:inline-block; padding:.75rem 1.25rem; border-radius:.75rem; background:var(--accent); color:#111; font-weight:600; box-shadow:var(--shadow); text-decoration:none}
+    .photo{flex:1; border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow); aspect-ratio:4/3; background:url('https://images.unsplash.com/photo-1562688465-26452ec4f20b?q=80&w=1600&auto=format&fit=crop') center/cover;}
+    section{padding:72px 0; text-align:center}
+    h2{margin-bottom:1rem; font-weight:600}
+    .card{background:var(--panel); border-radius:var(--radius); padding:1.5rem; box-shadow:var(--shadow); margin:0 auto; max-width:700px; text-align:left}
+    .table{width:100%; border-collapse:collapse; margin-top:1rem}
+    .table th,.table td{padding:.8rem 1rem; border-bottom:1px solid #e5e7eb}
+    .table th{background:#f9f5f0; text-align:left}
+    .contact{display:grid; grid-template-columns:1fr 1fr; gap:2rem; align-items:start}
+    .form label{display:block; margin-top:1rem; font-weight:500;}
+    .form input,.form textarea{width:100%; padding:1rem; border:1px solid #d1d5db; border-radius:.75rem; margin-top:.5rem}
+    .form button{margin-top:1.5rem; padding:.9rem 1.25rem; border:none; border-radius:.75rem; background:var(--accent); color:#111; font-weight:600; box-shadow:var(--shadow)}
+    footer{padding:32px 0; border-top:1px solid #e5e7eb; background:#fff; color:#374151; text-align:center}
+    .foot{display:flex; flex-direction:column; gap:.75rem; align-items:center}
+    .info-block b{display:block; margin-top:1rem; font-weight:600}
+    .info-block div{margin-top:.25rem}
+    @media(max-width:900px){.hero{flex-direction:column}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand"><div class="mark">家</div>Gahoe Art</div>
+      <ul>
+        <li><a href="#about">소개</a></li>
+        <li><a href="#rental">대관</a></li>
+        <li><a href="#contact">문의</a></li>
+        <li><a class="cta" href="#contact">대관 상담</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <h1>가회아트</h1>
+        <p class="lead">전시 · 브랜드 행사 · 촬영 · 워크숍까지. 현대적인 감각으로 리뉴얼된 한옥 갤러리입니다.</p>
+        <a class="cta" href="#contact">대관 문의하기</a>
+      </div>
+      <div class="photo"></div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h2>공간 소개</h2>
+        <div class="card">
+          <p>북촌 가회동의 모던 한옥 갤러리로, 전통의 멋과 현대적 편리함을 동시에 갖춘 공간입니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="rental">
+      <div class="container">
+        <h2>대관 안내</h2>
+        <div class="card">
+          <table class="table">
+            <thead><tr><th>유형</th><th>시간</th><th>요금</th></tr></thead>
+            <tbody>
+              <tr><td>시간대관</td><td>1시간</td><td>₩150,000~</td></tr>
+              <tr><td>일대관</td><td>10:00–20:00</td><td>₩900,000~</td></tr>
+              <tr><td>장기전시</td><td>3–7일</td><td>문의</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container contact">
+        <div>
+          <h2>대관 문의</h2>
+          <form class="form" onsubmit="return sendMailto(event)">
+            <label>성함<input required name="name"/></label>
+            <label>이메일<input required type="email" name="email"/></label>
+            <label>연락처<input name="phone"/></label>
+            <label>메시지<textarea required name="message" rows="5"></textarea></label>
+            <button type="submit">이메일로 보내기</button>
+          </form>
+          <p style="margin-top:1rem">또는 이메일: <a href="mailto:lee.sunghwan@hotmail.com">lee.sunghwan@hotmail.com</a></p>
+        </div>
+        <div class="card info-block">
+          <b>주소</b>
+          <div>서울특별시 종로구 북촌로 64-4, 가회아트 </div>
+          <b>대표자</b>
+          <div>이성환</div>
+          <b>연락처</b>
+          <div>010-7120-0008</div>
+          <b>이메일</b>
+          <div>lee.sunghwan@hotmail.com</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container foot">
+      <div><b>Gahoe Art</b><br/>한옥 갤러리 대관 · 전시 · 촬영 · 이벤트</div>
+      <div>대표자: 이성환 · 010-7120-0008 · lee.sunghwan@hotmail.com</div>
+    </div>
+  </footer>
+
+  <script>
+    function sendMailto(e){
+      e.preventDefault();
+      const f=e.target;
+      const name=encodeURIComponent(f.name.value);
+      const email=encodeURIComponent(f.email.value);
+      const phone=encodeURIComponent(f.phone.value);
+      const message=encodeURIComponent(f.message.value);
+      const body=`이름: ${name}%0D%0A이메일: ${email}%0D%0A연락처: ${phone}%0D%0A%0D%0A메시지:%0D%0A${message}`;
+      window.location.href=`mailto:lee.sunghwan@hotmail.com?subject=${encodeURIComponent('[대관문의] Gahoe Art')}&body=${body}`;
+    }
+  </script>
+</body>
+</html>
