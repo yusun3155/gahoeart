@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>가회아트 | 문의</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <div class="top">
+    <div class="wrap">
+      <a class="brand" href="index.html">가회아트</a>
+      <nav>
+        <a class="tab" href="index.html">Homepage</a>
+        <a class="tab" href="reserve.html">예약</a>
+        <a class="tab" href="info.html">공간 안내</a>
+        <a class="tab" href="visit.html">오시는 길</a>
+        <a class="tab active" href="contact.html">문의</a>
+      </nav>
+    </div>
+  </div>
+
+  <main class="container">
+    <h1>문의하기</h1>
+    <p class="muted">아래 폼을 작성하면 기본 메일 프로그램이 열립니다.</p>
+    <form class="card" onsubmit="openMail(event)">
+      <label>이름<br><input type="text" id="name" class="field" required></label>
+      <label>연락처(이메일/전화)<br><input type="text" id="contactField" class="field" required></label>
+      <label>요청 일정/내용<br><textarea id="message" rows="6" class="field" required></textarea></label>
+      <button class="btn" type="submit">메일 열기</button>
+    </form>
+  </main>
+
+  <footer>© <span id="y"></span> Gahoe Art · 가회아트</footer>
+  <script src="assets/app.js"></script>
+</body>
+</html>
