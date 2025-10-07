@@ -4,6 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>가회아트 | Homepage</title>
+  <link rel="preload" as="image" href="assets/hero-bukchon.jpg">
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
@@ -20,14 +21,23 @@
     </div>
   </div>
 
-<header class="hero bg"
-  style="--hero-bg: url('assets/hero-bukchon.jpg'); /* 이미지 경로 */
-         --hero-pos: center 40%;">  <!-- 필요시 30%~50%로 미세 조정 -->
-  <div class="inner">
-    <h1>2026 Coming Soon</h1>
-      <a class="btn" href="reserve.html">대관 문의 먼저 하기</a>
+  <!-- ★ 여기부터 히어로: 닫는 div 하나만 -->
+  <header class="hero bg"
+    style="--hero-bg: url('assets/hero-bukchon.jpg'); /* 이미지 경로 */
+           --hero-pos: center 40%;">
+    <div class="inner">
+      <h1>2026 Coming Soon</h1>
+      <div class="btn-row">
+        <a class="btn" href="reserve.html">대관 문의 먼저 하기</a>
+      </div>
     </div>
-  </div>
-</header>
+  </header>
 
+  <main class="container center" style="margin-top:24px;">
+    <!-- 필요하면 메인 컨텐츠 -->
+  </main>
 
+  <footer>© <span id="y"></span> Gahoe Art · 가회아트</footer>
+  <script src="assets/app.js"></script>
+</body>
+</html>
