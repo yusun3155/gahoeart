@@ -98,3 +98,16 @@ footer{
   text-align:center;padding:40px 0 60px;font-size:14px;color:var(--muted);
   border-top:1px solid var(--line)
 }
+
+
+/* === DEBUG: 강제 배경 적용 (보여주기 우선) === */
+.hero.bg,
+.hero.bg::before{
+  background-image: url('assets/hero-bukchon.jpg?v=3') !important;
+  background-size: cover !important;
+  background-position: center 40% !important;
+  opacity: 1 !important;
+  transform: none !important;
+}
+.hero.bg{ min-height: 60vh !important; overflow: hidden !important; }
+
