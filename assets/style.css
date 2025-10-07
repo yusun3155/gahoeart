@@ -100,14 +100,7 @@ footer{
 }
 
 
-/* === DEBUG: 강제 배경 적용 (보여주기 우선) === */
-.hero.bg,
-.hero.bg::before{
-  background-image: url('assets/hero-bukchon.jpg?v=3') !important;
-  background-size: cover !important;
-  background-position: center 40% !important;
-  opacity: 1 !important;
-  transform: none !important;
-}
-.hero.bg{ min-height: 60vh !important; overflow: hidden !important; }
+/* 변수 안 먹어도 보이도록 최종 백업 */
+.hero.bg { background-image: var(--hero-bg, inherit); }
+
 
